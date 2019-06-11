@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BUDGET APP</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <section class="app section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12 has-text-centered is-size-1 has-text-white">
+                    <h1 class="app--title">Available Budget in June 2019</h1>
+                    <p class="app--budget">+ 0.00</p>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="app__income">
+                        <p class="app__income--text">income</p>
+                        <p class="app__income--income total--income">+ 0.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="app__expenses">
+                        <p class="app__expenses--text">expenses</p>
+                        <p class="app__expenses--income total--expenses">- 0.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <section class="app__control">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12">
+                    <div class="app__control-box">
+                        <div class="field app__control-type">
+                            <div class="control">
+                                <div class="select">
+                                    <select class="app__control--type">
+                                        <option value="inc">+</option>
+                                        <option value="exp">-</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field app__control-description">
+                            <div class="control">
+                                <input class="input app__control--description" type="text" placeholder="Add description">
+                            </div>
+                        </div>
+                        <div class="field app__control-value">
+                            <div class="control">
+                                <input class="input app__control--value" type="number" min="0" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="field app__control-button">
+                            <button class="button is-success app__control--add">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app__list">
+        <div class="container">
+            <div class="columns list__container">
+                <div class="column is-6">
+                    <div class="app__list-box">
+                        <h2 class="app__list-box--title has-text-inc">income</h2>
+                        <ul class="app__list-box-list income--list">
+                            <!-- <li class="app__list-box-list--item">
+                                <p class="app__list-box-list--text">Salary</p>
+                                <p class="app__list-box-list--inc">+ 2.00 <a href="#" class="app__list-box-list--link">x</a></p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="column is-6">
+                    <div class="app__list-box">
+                        <h2 class="app__list-box--title has-text-danger">expense</h2>
+                        <ul class="app__list-box-list expenses--list">
+                            <!-- <li class="app__list-box-list--item">
+                                <p class="app__list-box-list--text">Salary</p>
+                                <p class="app__list-box-list--exp">- 2.00 <a href="#" class="app__list-box-list--link">x</a></p>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/controller/UIController.js"></script>
+    <script src="js/controller/BudgetController.js"></script>
+    <script src="js/controller/AppController.js"></script>
+</body>
+</html>

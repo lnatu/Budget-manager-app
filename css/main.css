@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: anderella;
+  src: url(../fonts/anderella.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: valeriana;
+  src: url(../fonts/valeriana.otf);
+  font-weight: 400; }
+@font-face {
+  font-family: worksans;
+  src: url(../fonts/WorkSans-Regular.ttf);
+  font-weight: 400; }
+@font-face {
+  font-family: worksans;
+  src: url(../fonts/WorkSans-Medium.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: saturedate;
+  src: url(../fonts/saturdate.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: FelonastSC;
+  src: url(../fonts/Felonast-Medium.ttf);
+  font-weight: 500; }
+@font-face {
+  font-family: rowland;
+  src: url(../fonts/Rowland-Bold.otf);
+  font-weight: 500; }
+@font-face {
+  font-family: dehuti;
+  src: url(../fonts/Dehuti-Bold.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'wild youth';
+  src: url(../fonts/WildYouth-Regular.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: Leafy;
+  src: url(../fonts/leafy.otf);
+  font-weight: 700; }
+@font-face {
+  font-family: 'lemon tuesday';
+  src: url(../fonts/Lemon\ Tuesday.otf);
+  font-weight: 700; }
+body {
+  font-family: anderella; }
+
+.app {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/bg-dollar.jpg);
+  background-size: cover; }
+  .app--title {
+    margin-bottom: 1rem; }
+  .app--budget {
+    font-family: dehuti;
+    font-weight: 500;
+    letter-spacing: 5px; }
+  .app__income, .app__expenses {
+    width: 60%;
+    margin: auto;
+    font-family: worksans;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-image: linear-gradient(to bottom, #00d1b2, #10ccb0, #1ac7ad, #22c3ab, #28bea8); }
+    .app__income--text, .app__expenses--text {
+      color: #333;
+      font-weight: 500;
+      text-transform: uppercase; }
+    .app__income--income, .app__expenses--income {
+      color: #fff;
+      font-weight: 500;
+      font-family: serif; }
+  .app__expenses {
+    background-image: linear-gradient(to bottom, #f8385f, #f03e61, #e74364, #df4765, #d64b67); }
+  .app__control {
+    padding: 2rem 0;
+    background-image: linear-gradient(to bottom, #c9c9cd, #cdcdd2, #d2d2d8, #d6d6dd, #dbdbe3); }
+    .app__control-box {
+      width: 60%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .app__control-description {
+      flex: 0 0 70%; }
+    .app__control-value {
+      flex: 0 0 10%; }
+  .app__list {
+    margin-top: 2rem; }
+    .app__list-box {
+      width: 80%;
+      margin: auto; }
+      .app__list-box--title {
+        font-family: FelonastSC;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 2rem;
+        color: #333;
+        padding: 1rem 0; }
+      .app__list-box-list--item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        border-top: 1px solid #C9C9CD;
+        border-bottom: 1px solid #C9C9CD;
+        font-weight: 500; }
+      .app__list-box-list--text {
+        font-size: 1.5rem; }
+      .app__list-box-list--inc {
+        font-size: 2.5rem;
+        color: #22B09A;
+        font-family: 'lemon tuesday';
+        font-weight: 500; }
+      .app__list-box-list--exp {
+        font-size: 2.5rem;
+        color: #EF3E61;
+        font-family: 'lemon tuesday';
+        font-weight: 500; }
+      .app__list-box-list--link {
+        font-size: 2rem;
+        display: inline-block;
+        border-radius: 50%;
+        font-family: serif;
+        font-family: anderella; }
+
+.field {
+  margin-bottom: 0 !important; }
+
+.has-text-inc {
+  color: #1EC5AC; }
+
+/*# sourceMappingURL=main.css.map */
